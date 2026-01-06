@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/britresort0/", // <- AJOUTE CETTE LIGNE
+  base: "/", // Pour Vercel, on met la racine "/"
   server: {
     host: "::",
     port: 8080,
