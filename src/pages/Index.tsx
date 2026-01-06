@@ -216,7 +216,7 @@ const Index = () => {
             scale: 1.05
           }} whileTap={{
             scale: 0.98
-          }} href={`tel:${phoneNumber}`} className="btn-luxury-filled w-full sm:w-auto">
+          }} href={`tel:${phoneNumber}`} className="btn-luxury-filled w-full sm:w-auto my-0 mx-0 px-[39px] text-center py-[13px]">
               <Phone className="w-5 h-5" />
               Réserver maintenant
             </motion.a>
@@ -732,15 +732,15 @@ const Index = () => {
               <h4 className="font-display text-xl text-foreground mb-6">Suivez-nous</h4>
               <div className="flex justify-center md:justify-end gap-4">
                 <motion.a whileHover={{
-                  scale: 1.1,
-                  y: -3
-                }} href="https://web.facebook.com/brbritresort" target="_blank" rel="noopener noreferrer" className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-300">
+                scale: 1.1,
+                y: -3
+              }} href="https://web.facebook.com/brbritresort" target="_blank" rel="noopener noreferrer" className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-300">
                   <span className="text-sm font-medium">FB</span>
                 </motion.a>
                 <motion.a whileHover={{
-                  scale: 1.1,
-                  y: -3
-                }} href="#" className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-300">
+                scale: 1.1,
+                y: -3
+              }} href="#" className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-300">
                   <span className="text-sm font-medium">IG</span>
                 </motion.a>
                 <motion.a whileHover={{
