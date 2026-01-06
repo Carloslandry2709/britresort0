@@ -731,12 +731,18 @@ const Index = () => {
             <motion.div variants={fadeInRight} className="text-center md:text-right">
               <h4 className="font-display text-xl text-foreground mb-6">Suivez-nous</h4>
               <div className="flex justify-center md:justify-end gap-4">
-                {['FB', 'IG'].map((social, index) => <motion.a key={social} whileHover={{
-                scale: 1.1,
-                y: -3
-              }} href="#" className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-300">
-                    <span className="text-sm font-medium">{social}</span>
-                  </motion.a>)}
+                <motion.a whileHover={{
+                  scale: 1.1,
+                  y: -3
+                }} href="https://web.facebook.com/brbritresort" target="_blank" rel="noopener noreferrer" className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-300">
+                  <span className="text-sm font-medium">FB</span>
+                </motion.a>
+                <motion.a whileHover={{
+                  scale: 1.1,
+                  y: -3
+                }} href="#" className="w-12 h-12 border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors duration-300">
+                  <span className="text-sm font-medium">IG</span>
+                </motion.a>
                 <motion.a whileHover={{
                 scale: 1.1,
                 y: -3
