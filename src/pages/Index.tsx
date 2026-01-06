@@ -135,7 +135,7 @@ const Index = () => {
           scale: 1
         }} transition={{
           delay: 1.2
-        }} href={`tel:${phoneNumber}`} className="btn-luxury-ghost">
+        }} href={`tel:${phoneNumber}`} className="btn-luxury-ghost text-secondary-foreground bg-accent border-secondary-foreground">
             <Phone className="w-4 h-4" />
             <span className="hidden sm:inline">Réserver</span>
           </motion.a>
