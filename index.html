@@ -1,24 +1,59 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Brit Resort Hôtel & Plage | Luxe en Bord de Mer à Jacqueville, Côte d'Ivoire</title>
+    <meta name="description" content="Brit Resort à Akrou Jacqueville - Hôtel de luxe avec plage privée, restaurant gastronomique et événements exclusifs. Réservez votre séjour de rêve en Côte d'Ivoire." />
+    <meta name="keywords" content="Brit Resort, hôtel Jacqueville, resort Côte d'Ivoire, plage privée, hôtel luxe Abidjan, réveillon Jacqueville, hébergement Akrou" />
+    <meta name="author" content="Brit Resort Hôtel & Plage" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://britresort.com" />
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:url" content="https://britresort.com" />
+    <meta property="og:title" content="Brit Resort Hôtel & Plage | Luxe en Bord de Mer" />
+    <meta property="og:description" content="Découvrez le luxe au bord de l'océan à Jacqueville. Plage privée, suites élégantes et expériences inoubliables." />
+    <meta property="og:locale" content="fr_CI" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://britresort.com" />
+    <meta property="twitter:title" content="Brit Resort Hôtel & Plage | Luxe en Bord de Mer" />
+    <meta property="twitter:description" content="Découvrez le luxe au bord de l'océan à Jacqueville. Plage privée, suites élégantes et expériences inoubliables." />
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Brit Resort Hôtel & Plage",
+      "description": "Complexe hôtelier de luxe avec plage privée à Akrou Jacqueville, Côte d'Ivoire",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Akrou Jacqueville",
+        "addressLocality": "Jacqueville",
+        "addressCountry": "CI"
+      },
+      "telephone": "+225 07 11 11 94 94",
+      "email": "brit.resort@gmail.com",
+      "priceRange": "200000 - 320000 FCFA",
+      "amenityFeature": [
+        {"@type": "LocationFeatureSpecification", "name": "Plage privée"},
+        {"@type": "LocationFeatureSpecification", "name": "Restaurant"},
+        {"@type": "LocationFeatureSpecification", "name": "Événements"}
+      ]
+    }
+    </script>
   </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
