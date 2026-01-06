@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, MessageCircle, Mail, MapPin, Clock, Star, Waves, UtensilsCrossed, PartyPopper, Sunrise, Hotel, Sparkles, ChevronDown } from 'lucide-react';
+import { Phone, MessageCircle, Mail, MapPin, Clock, Star, Waves, UtensilsCrossed, PartyPopper, Sunrise, Hotel, Sparkles, ChevronDown, Navigation } from 'lucide-react';
 import heroImage from '@/assets/hero-beach.jpg';
 import suiteLuxury from '@/assets/suite-luxury.jpg';
 import restaurantImage from '@/assets/restaurant.jpg';
@@ -368,8 +368,68 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Location Map Section */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <span className="text-primary text-sm tracking-[0.3em] uppercase font-body">Localisation</span>
+            <h2 className="font-display text-3xl md:text-5xl font-light text-foreground mt-4 mb-6">
+              Nous Trouver
+            </h2>
+            <div className="divider-gold mb-4" />
+            <p className="text-muted-foreground font-body max-w-2xl mx-auto">
+              Akrou Jacqueville, Côte d'Ivoire – Un paradis accessible en bord de mer
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="max-w-5xl mx-auto"
+          >
+            <div className="relative border border-border/50 overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.123456789!2d-4.4138861!3d5.2060916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMTInMjEuOSJOIDTCsDI0JzUwLjAiVw!5e0!3m2!1sfr!2sci!4v1234567890"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full"
+                title="Localisation de Brit Resort à Jacqueville"
+              />
+            </div>
+            
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="https://www.google.com/maps/dir/5.3294747,-3.9776489/5.2060916,-4.4138861/@5.2860627,-4.526681,10z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-luxury-filled"
+              >
+                <Navigation className="w-4 h-4" />
+                Obtenir l'itinéraire
+              </a>
+              <div className="flex items-center gap-2 text-muted-foreground font-body text-sm">
+                <MapPin className="w-4 h-4 text-primary" />
+                <span>Akrou Jacqueville, Côte d'Ivoire</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
-      <section id="contact" className="py-24 md:py-32 bg-background relative overflow-hidden">
+      <section id="contact" className="py-24 md:py-32 bg-muted/30 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent" />
         </div>
