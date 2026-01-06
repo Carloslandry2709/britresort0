@@ -224,7 +224,7 @@ const Index = () => {
             scale: 1.05
           }} whileTap={{
             scale: 0.98
-          }} href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-luxury w-full sm:w-auto mr-0 px-[20px] py-[21px] my-[11px] mx-[79px]">
+          }} href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-luxury w-full sm:w-auto mr-0 my-0 py-[18px] px-[18px] mx-[82px]">
               <MessageCircle className="w-5 h-5" />
               WhatsApp
             </motion.a>
